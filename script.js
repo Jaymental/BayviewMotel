@@ -1,2 +1,2 @@
-// Bayview Motel JavaScript-Document
+// Bayview Motel JavaScript-Dokument
 

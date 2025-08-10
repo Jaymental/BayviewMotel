@@ -1,5 +1,71 @@
-/* Bayview Motel CascadingStyleSheet-Document */
+/* Bayview Motel CascadingStyleSheet-Dokument */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
+    background: linear-gradient(rgb(255, 165, 0), rgb(255, 215, 0), rgb(255, 190, 0), rgb(255, 140, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+    -webkit-user-select: none;
+    user-select: none;
+}
 
+h1 {
+    position: fixed;
+    top: 0.5em;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: rgb(255, 165, 0);
+    border: 0.3em ridge rgb(40, 40, 40);
+    border-radius: 40%;
+    padding: 1em 2em;
+    background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    color: rgb(255, 165, 0);
+}
+
+.navbar {
+    position: fixed;
+    top: 18em;
+    border: 0.2em outset rgb(40, 40, 40);
+    background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
+    border-radius: 1em;
+    padding: 0.2em;
+}
+
+.navbar button,
+input {
+    color: rgb(255, 165, 0);
+    padding: 0.2em 0.8em;
+    background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
+    border-radius: 0.8em;
+    border: 0.2em outset rgb(40, 40, 40);
+}
+
+.navbar input::placeholder {
+    color: rgba(255, 165, 0, 0.5);
+}
+
+.navbar input:hover::placeholder {
+    color: rgba(255, 165, 0, 0.8);
+}
+
+.content {
+    background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
+    border: 0.2em outset rgb(40, 40, 40);
+    padding: 0.2em 1em;
+    border-radius: 1.6em;
 }
