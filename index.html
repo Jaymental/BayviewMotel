@@ -19,7 +19,9 @@
         <input type="search" name="Suche" id="Search" placeholder="Suchen...(Außer Betrieb!)">
         <button onclick="toggleTo('Houserules');toggleMenu()" id="toHouserules">Hausordnung</button>
         <button onclick="toggleTo('Rental');toggleMenu()" id="toRental">Preise und Dienstleistungen</button>
-        <button onclick="toggleMenu()" disabled>Angebote</button>
+        <!------------------------------------------------------------------>
+        <button onclick="toggleTo('Sale');toggleMenu()" disabled>Angebote</button>
+        <!----------------------^-BUTTON IST DEAKTIVIERT-^------------------>
         <button onclick="toggleTo('Contact');toggleMenu()" id="toContact">Kontakt</button>
     </div>
     <!--Inhaltsanzeige-->
@@ -58,7 +60,7 @@
                 einsetzt, wird des Hauses verwiesen.</p>
             <p>Das Haus behält sich jederzeit das Recht vor, von Schusswaffen auf dem Grundstück zur Durchsetzung der
                 Hausordnung Gebrauch zu machen.</p>
-            <h3>3. Privatsspähre und Respekt</h3>
+            <h3>3. Privatssphäre und Respekt</h3>
             <p>Die Identität und die Geschäfte anderer Gäste sind Privatsache. Offenes Nachfragen oder Ausspionieren ist
                 nicht gestattet und wird als Bruch der Hausordnung gewertet. Jeder, der hier eincheckt, hat ein Recht
                 auf Anonymität und Diskretion.</p>
@@ -79,6 +81,9 @@
                 hinausgehen. Diese werden individuell im direkten Gespräch verhandelt und können unter anderem das
                 Vermitteln
                 von Kontakten oder die Beschaffung von Informationen oder Gegenständen umfassen.</p>
+        </div>
+        <div id="Sale" class="topic hidden">
+            <h2>Angebote</h2>
         </div>
         <div id="Contact" class="topic hidden">
             <h2>Kontakt</h2>
