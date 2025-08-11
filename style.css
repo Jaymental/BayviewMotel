@@ -32,12 +32,35 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3em;
     color: rgb(255, 165, 0);
+    text-shadow: 0 0 0.25em rgb(255, 0, 0);
     border: 0.3em ridge rgb(40, 40, 40);
     border-radius: 40%;
     padding: 1em 2em;
     background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
     cursor: pointer;
     box-shadow: 0.2em 0.4em 0.5em black;
+    animation: pulseShadow 2.5s infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes pulseShadow {
+    0% {
+        color: rgb(255,165,0);
+        text-shadow: 0 0 0.25em rgb(255, 0, 0);
+        box-shadow: 0.2em 0.4em 0.5em black;
+    }
+
+    50% {
+        color: rgb(255,175,0);
+        text-shadow: 0 0 0.75em rgb(255, 140, 0);
+        box-shadow: 0.2em 0.4em 0.75em rgb(20,20,20);
+    }
+
+    100% {
+        color: rgb(255,165,0);
+        text-shadow: 0 0 0.25em rgb(255, 0, 0);
+        box-shadow: 0.2em 0.4em 0.5em black;
+    }
 }
 
 h2 {
@@ -137,7 +160,7 @@ input {
         top: 0.66em;
         right: 0.66em;
         font-size: 2em;
-        width:1.75em;
+        width: 1.75em;
         background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
         border-radius: 0.3em;
         padding-bottom: 0.15em;
@@ -166,10 +189,12 @@ input {
         margin-top: 4em;
         transform: scale(2) translateX(-0.5em);
     }
+
     .navbar button:hover {
         transform: scale(2.1);
     }
-    .navbar button:disabled:hover{
+
+    .navbar button:disabled:hover {
         transform: scale(2);
     }
 
@@ -180,12 +205,14 @@ input {
     .navbar.visible {
         display: flex;
     }
-    .content{
-        top:14em;
+
+    .content {
+        top: 14em;
         width: 80%;
-        height:70%;
+        height: 70%;
     }
-    h1{
+
+    h1 {
         font-size: 2.1em;
     }
 }
