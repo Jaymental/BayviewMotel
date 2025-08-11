@@ -17,6 +17,7 @@ body {
     overflow: auto;
     -webkit-user-select: none;
     user-select: none;
+    transition: visibility 0.3s ease;
 }
 
 h1 {
@@ -37,22 +38,34 @@ h2 {
     color: rgb(255, 165, 0);
 }
 
+.hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
 .navbar {
     position: fixed;
     top: 18em;
     border: 0.2em outset rgb(40, 40, 40);
     background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
-    border-radius: 1em;
-    padding: 0.2em;
+    border-radius: 2em;
+    padding: 1em;
 }
 
 .navbar button,
 input {
     color: rgb(255, 165, 0);
     padding: 0.2em 0.8em;
+    margin: 0.2em;
     background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
     border-radius: 0.8em;
     border: 0.2em outset rgb(40, 40, 40);
+    transition: transform 0.3s ease;
+}
+
+.navbar button:hover{
+    transform: scale(1.05);
+    border-color: rgb(255,165,0);
 }
 
 .navbar input::placeholder {
@@ -63,9 +76,21 @@ input {
     color: rgba(255, 165, 0, 0.8);
 }
 
+.navbar, .content {
+    width:42em;
+}
+
 .content {
+    position: absolute;
+    top: 23em;
     background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
     border: 0.2em outset rgb(40, 40, 40);
     padding: 0.2em 1em;
     border-radius: 1.6em;
+    height: auto;
+}
+
+.topic {
+    color: rgb(175,175,175);
+    top: 0.2em;
 }
